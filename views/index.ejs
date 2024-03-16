@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="store">
+  <head>
+    <title><%= title %></title>
+
+    <!-- Importando JQuery -->
+    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+
+    <!-- Importando Framework Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/materialize.min.css' />
+    <script type="text/javascript" src="javascripts/materialize.min.js"></script>
+
+    <!-- Importando Framework Angular -->
+    <script type="text/javascript" src="javascripts/angular.min.js"></script>
+
+    <!-- Importando Framework Customizado -->
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src="javascripts/Custom/app.js"></script>
+    <script type="text/javascript" src="javascripts/Custom/products.js"></script>
+
+  </head>
+  <body ng-controller="StoreController as store">
+    <nav class="green accent-3">
+      <div class="nav-wrapper">
+        <a href="./" class="brand-logo">Capim Bambu</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="portfolio.ejs">Portfólio</a></li>
+          <li><a href="contato.ejs">Contato</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="portfolio.ejs">Portfólio</a></li>
+          <li><a href="contato.ejs">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h2>{{store.Nome}}</h2>
+    <product-title></product-title>
+  </body>
+  <script>
+     $(".button-collapse").sideNav();
+  </script>
+</html>

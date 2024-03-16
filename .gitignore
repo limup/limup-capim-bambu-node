@@ -1,0 +1,10 @@
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Diretório de dependências (por exemplo, para projetos Node.js)
+/node_modules
+
+# Arquivos de compilação
+/build
+/dist
